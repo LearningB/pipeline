@@ -1,10 +1,9 @@
 pipeline{
-    node any{
-        stage 1{
-            build{
-                script{
-                    echo "testingg"
-                }
+    agent any
+        stages{
+        stage("1"){
+            steps{
+                echo "Testing 123"
             }
         }
     }
