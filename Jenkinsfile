@@ -3,7 +3,6 @@ pipeline{
         stages{
         stage("1"){
             steps{
-                ls
                 withMaven(
                     maven:'maven',
                     globalMavenSettingsConfig: "MySettings",
