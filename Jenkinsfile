@@ -5,7 +5,7 @@ pipeline{
             steps{
                 withMaven(
                     maven:'maven',
-                    globalMavenSettingsConfig: "MyGlobalSettings"
+                    globalMavenSettingsConfig: "MySettings"
                 ){
                     mvn clean
                 }
