@@ -8,7 +8,7 @@ pipeline{
                     globalMavenSettingsConfig: "MySettings",
                     mavenSettingsConfig: 'MySettings'
                 ){
-                    mvn clean -s settings.xml
+                    mvn clean
                 }
                 echo "Testing 123 but for what"
             }
