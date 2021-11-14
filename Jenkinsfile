@@ -3,7 +3,7 @@ pipeline{
         stages{
         stage("1"){
             steps{
-                withMaven(maven:'apache-maven-3.6.3'){
+                withMaven(maven:'maven'){
                     mvn clean
                 }
                 echo "Testing 123 but for what"
