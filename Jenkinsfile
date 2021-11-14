@@ -6,7 +6,7 @@ pipeline{
                 withMaven(
                     maven:'maven',
                     globalMavenSettingsConfig: "MySettings",
-                    mavenSettingsConfig: 'settings'
+                    mavenSettingsConfig: 'settings.xml'
                 ){
                     mvn clean
                 }
