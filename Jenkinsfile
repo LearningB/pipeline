@@ -3,12 +3,8 @@ pipeline{
         stages{
         stage("1"){
             steps{
-                withMaven(
-                    maven:'maven',
-                    globalMavenSettingsConfig: "MySettings",
-                    mavenSettingsConfig: 'MySettings'
-                ){
-                    mvn clean
+                withMaven{
+                    sh "mvn clean verify"
                 }
                 echo "Testing 123 but for what"
             }
